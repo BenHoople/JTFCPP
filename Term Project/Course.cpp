@@ -61,7 +61,7 @@ namespace cs
       if (courseTitle != nullptr)                            // allocate dyn memory
       {
          courseTitle_ = new char[strlen(courseTitle) + 1];
-		 //strncpy_s(courseTitle_, courseTitle, MAX_COURSECODE_LEN);                  //copy resource data
+		 strcpy(courseTitle_, courseTitle);                  //copy resource data
       }
       else
          courseTitle_ = nullptr;
